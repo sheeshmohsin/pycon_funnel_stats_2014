@@ -7,6 +7,6 @@ urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'pycon_funnel_stats_2014.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
-
+    url(r'^$', 'statistics.views.stats', name='stats'),
     url(r'^admin/', include(admin.site.urls)),
 )
