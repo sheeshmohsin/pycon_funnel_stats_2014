@@ -10,4 +10,5 @@ def stats(request):
 	html = urlopen('http://in.pycon.org/funnel/2014/')
 	page = html.read()
 	total = program.total(page)
-	return render_to_response("home.html",{'total':total, 'begineer':2, 'intermediate':3, 'advanced':5})
+	proposallist = program.proposallist(page)
+	return render_to_response("home.html",{'total':total, 'begineer':proposallist[0], 'intermediate':proposallist[1], 'advanced':proposallist[2]})
