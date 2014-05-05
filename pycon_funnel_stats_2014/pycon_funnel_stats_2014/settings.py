@@ -48,6 +48,13 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
+# List of callables that know how to import templates from various sources.
+TEMPLATE_LOADERS = (
+    'django.template.loaders.filesystem.Loader',
+    'django.template.loaders.app_directories.Loader',
+    #'django.template.loaders.eggs.Loader',
+)
+
 TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]
 
 ROOT_URLCONF = 'pycon_funnel_stats_2014.urls'
@@ -78,11 +85,18 @@ USE_L10N = True
 
 USE_TZ = True
 
+# List of finder classes that know how to find static files in
+# various locations.
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    #'django.contrib.staticfiles.finders.DefaultStorageFinder',
+)
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
-STATIC_ROOT = os.path.join(BASE_DIR, os.path.join(BASE_DIR, 'statistics'))
+STATIC_ROOT = os.path.join(BASE_DIR, 'statistics')
 
 STATIC_URL = '/static/'
 

@@ -12,12 +12,6 @@ def proposallist(page):
     extras = soup.find_all('tbody')
     proposals, number = [], []
     i, j, k = 0, 0, 0
-    b_core, b_embedded, b_infrastructure, b_scientific = 0, 0, 0, 0
-    b_software, b_web, b_workshops = 0, 0, 0
-    i_core, i_embedded, i_infrastructure, i_scientific = 0, 0, 0, 0
-    i_software, i_web, i_workshops = 0, 0, 0
-    a_core, a_embedded, a_infrastructure, a_scientific = 0, 0, 0, 0
-    a_software, a_web, a_workshops = 0, 0, 0
 
     for extra in extras[::2]:
         proposals.append(extra)
