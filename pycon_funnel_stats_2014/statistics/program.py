@@ -212,6 +212,7 @@ def beginner(page):
     beginner.append(software_development)
     beginner.append(web_development)
     beginner.append(workshops)
+    return beginner
 
 def intermediate(page):
     soup = BeautifulSoup(page)
@@ -298,6 +299,7 @@ def intermediate(page):
     intermediate.append(software_development)
     intermediate.append(web_development)
     intermediate.append(workshops)
+    return intermediate
 
 def advanced(page):
     soup = BeautifulSoup(page)
@@ -384,3 +386,4 @@ def advanced(page):
     advanced.append(software_development)
     advanced.append(web_development)
     advanced.append(workshops)
+    return advanced

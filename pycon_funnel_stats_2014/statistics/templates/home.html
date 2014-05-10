@@ -132,18 +132,139 @@
         </div>
     </div>
     <hr>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <h3>Beginner</h3>
+      <hr>
+    </div><!-- /.col-lg-6 -->
   </div>
 
 
-  <div class="col-sm-4">
-    <div class="list-group">
-      {% for beginner in beginners %}
-      <a href="#" class="list-group-item">
-        <h4 class="list-group-item-heading">{{ beginner.1 }}</h4>
-        <h3 class="list-group-item-heading">{{ beginner.0 }}</h3>
-        <p class="list-group-item-text">Applied on - {{ beginner.2 }}</p>
-      </a>
-      {% endfor %}
+  <!-- Beginners (Core Python) -->
+  <div class="row">
+    <div class="col-lg-6">
+      <h4>Core Python</h4>
+      <div class="list-group">
+        {% for corebeginner in corebeginners %}
+        <a href="#" class="list-group-item">
+          <h4 class="list-group-item-heading">{{ corebeginner.1 }}</h4>
+          <h5 class="list-group-item-heading">{{ corebeginner.0 }}</h5>
+          <h6 class="list-group-item-text text-muted">Applied on - {{ corebeginner.4 }}</h6>
+        </a>
+        {% endfor %}
+      </div>
+    </div><!-- /.col-lg-6 -->
   </div>
-        </div><!-- /.col-sm-4 -->
+  <!-- End of Beginners (Core Python) -->
+
+
+  <!-- Beginners (Embedded Python) -->
+  <div class="row">
+    <div class="col-lg-6">
+      <h4>Embedded Python</h4>
+      <div class="list-group">
+        {% for embeddedbeginner in embeddedbeginners %}
+        <a href="#" class="list-group-item">
+          <h4 class="list-group-item-heading">{{ embeddedbeginner.1 }}</h4>
+          <h5 class="list-group-item-heading">{{ embeddedbeginner.0 }}</h5>
+          <h6 class="list-group-item-text text-muted">Applied on - {{ embeddedbeginner.4 }}</h6>
+        </a>
+        {% endfor %}
+      </div>
+    </div><!-- /.col-lg-6 -->
+  </div>
+  <!-- End of Beginners (Embedded Python) -->
+
+
+  <!-- Beginners (Infrastructure) -->
+  <div class="row">
+    <div class="col-lg-6">
+      <h4>Infrastructure</h4>
+      <div class="list-group">
+        {% for infrabeginner in infrabeginners %}
+        <a href="#" class="list-group-item">
+          <h4 class="list-group-item-heading">{{ infrabeginner.1 }}</h4>
+          <h5 class="list-group-item-heading">{{ infrabeginner.0 }}</h5>
+          <h6 class="list-group-item-text text-muted">Applied on - {{ infrabeginner.4 }}</h6>
+        </a>
+        {% endfor %}
+      </div>
+    </div><!-- /.col-lg-6 -->
+  </div>
+  <!-- End of Beginners (Infrastructure) -->
+
+
+  <!-- Beginners (Scientific Computing) -->
+  <div class="row">
+    <div class="col-lg-6">
+      <h4>Scientific Computing</h4>
+      <div class="list-group">
+        {% for scibeginner in scibeginners %}
+        <a href="#" class="list-group-item">
+          <h4 class="list-group-item-heading">{{ scibeginner.1 }}</h4>
+          <h5 class="list-group-item-heading">{{ scibeginner.0 }}</h5>
+          <h6 class="list-group-item-text text-muted">Applied on - {{ scibeginner.4 }}</h6>
+        </a>
+        {% endfor %}
+      </div>
+    </div><!-- /.col-lg-6 -->
+  </div>
+  <!-- End of Beginners (Scientific Computing) -->
+
+
+  <!-- Beginners (Software Development Tools) -->
+  <div class="row">
+    <div class="col-lg-6">
+      <h4>Software Development Tools</h4>
+      <div class="list-group">
+        {% for softbeginner in softbeginners %}
+        <a href="#" class="list-group-item">
+          <h4 class="list-group-item-heading">{{ softbeginner.1 }}</h4>
+          <h5 class="list-group-item-heading">{{ softbeginner.0 }}</h5>
+          <h6 class="list-group-item-text text-muted">Applied on - {{ softbeginner.4 }}</h6>
+        </a>
+        {% endfor %}
+      </div>
+    </div><!-- /.col-lg-6 -->
+  </div>
+  <!-- End of Beginners (Software Development Tools) -->
+
+
+  <!-- Beginners (Web Development) -->
+  <div class="row">
+    <div class="col-lg-6">
+      <h4>Web Development</h4>
+      <div class="list-group">
+        {% for webbeginner in webbeginners %}
+        <a href="#" class="list-group-item">
+          <h4 class="list-group-item-heading">{{ webbeginner.1 }}</h4>
+          <h5 class="list-group-item-heading">{{ webbeginner.0 }}</h5>
+          <h6 class="list-group-item-text text-muted">Applied on - {{ webbeginner.4 }}</h6>
+        </a>
+        {% endfor %}
+      </div>
+    </div><!-- /.col-lg-6 -->
+  </div>
+  <!-- End of Beginners (Web Development) -->
+
+
+  <!-- Beginners (Workshops) -->
+  <div class="row">
+    <div class="col-lg-6">
+      <h4>Workshops</h4>
+      <div class="list-group">
+        {% for workbeginner in workbeginners %}
+        <a href="#" class="list-group-item">
+          <h4 class="list-group-item-heading">{{ workbeginner.1 }}</h4>
+          <h5 class="list-group-item-heading">{{ workbeginner.0 }}</h5>
+          <h6 class="list-group-item-text text-muted">Applied on - {{ workbeginner.4 }}</h6>
+        </a>
+        {% endfor %}
+      </div>
+    </div><!-- /.col-lg-6 -->
+  </div>
+  <!-- End of Beginners (Workshops) -->
+
+</div>
 {% endblock %}

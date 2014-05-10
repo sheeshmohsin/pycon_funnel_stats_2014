@@ -17,5 +17,8 @@ def stats(request):
     context = Context({'total':total, 'begineer':proposallist[0],
             'intermediate': proposallist[1],'advanced':proposallist[2], 
             'beginnerchart': section[0], 'intermediatechart': section[1], 
-            'advancedchart': section[2], 'beginners' : beginnerlist})
+            'advancedchart': section[2], 'corebeginners' : beginnerlist[0],
+            'embeddedbeginners' : beginnerlist[1], 'infrabeginners' : beginnerlist[2],
+            'scibeginners' : beginnerlist[3], 'softbeginners' : beginnerlist[4],
+            'webbeginners' : beginnerlist[5], 'workbeginners' : beginnerlist[6]})
     return render_to_response("home.html", context)
