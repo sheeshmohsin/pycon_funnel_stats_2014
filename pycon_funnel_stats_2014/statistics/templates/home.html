@@ -266,5 +266,139 @@
   </div>
   <!-- End of Beginners (Workshops) -->
 
+
+  <div class="row">
+    <div class="col-lg-12">
+      <h3>Intermediate</h3>
+      <hr>
+    </div><!-- /.col-lg-6 -->
+  </div>
+
+
+  <!-- Intermediate (Core Python) -->
+  <div class="row">
+    <div class="col-lg-6">
+      <h4>Core Python</h4>
+      <div class="list-group">
+        {% for coreintermediate in coreintermediates %}
+        <a href="#" class="list-group-item">
+          <h4 class="list-group-item-heading">{{ coreintermediate.1 }}</h4>
+          <h5 class="list-group-item-heading">{{ coreintermediate.0 }}</h5>
+          <h6 class="list-group-item-text text-muted">Applied on - {{ coreintermediate.4 }}</h6>
+        </a>
+        {% endfor %}
+      </div>
+    </div><!-- /.col-lg-6 -->
+  </div>
+  <!-- End of Intermediate (Core Python) -->
+
+
+  <!-- Intermediate (Embedded Python) -->
+  <div class="row">
+    <div class="col-lg-6">
+      <h4>Embedded Python</h4>
+      <div class="list-group">
+        {% for embeddedintermediate in embeddedintermediates %}
+        <a href="#" class="list-group-item">
+          <h4 class="list-group-item-heading">{{ embeddedintermediate.1 }}</h4>
+          <h5 class="list-group-item-heading">{{ embeddedintermediate.0 }}</h5>
+          <h6 class="list-group-item-text text-muted">Applied on - {{ embeddedintermediate.4 }}</h6>
+        </a>
+        {% endfor %}
+      </div>
+    </div><!-- /.col-lg-6 -->
+  </div>
+  <!-- End of Intermediate (Embedded Python) -->
+
+
+  <!-- Intermediate (Infrastructure) -->
+  <div class="row">
+    <div class="col-lg-6">
+      <h4>Infrastructure</h4>
+      <div class="list-group">
+        {% for infraintermediate in infraintermediates %}
+        <a href="#" class="list-group-item">
+          <h4 class="list-group-item-heading">{{ infraintermediate.1 }}</h4>
+          <h5 class="list-group-item-heading">{{ infraintermediate.0 }}</h5>
+          <h6 class="list-group-item-text text-muted">Applied on - {{ infraintermediate.4 }}</h6>
+        </a>
+        {% endfor %}
+      </div>
+    </div><!-- /.col-lg-6 -->
+  </div>
+  <!-- End of Intermediate (Infrastructure) -->
+
+
+  <!-- Intermediate (Scientific Computing) -->
+  <div class="row">
+    <div class="col-lg-6">
+      <h4>Scientific Computing</h4>
+      <div class="list-group">
+        {% for sciintermediate in sciintermediates %}
+        <a href="#" class="list-group-item">
+          <h4 class="list-group-item-heading">{{ sciintermediate.1 }}</h4>
+          <h5 class="list-group-item-heading">{{ sciintermediate.0 }}</h5>
+          <h6 class="list-group-item-text text-muted">Applied on - {{ sciintermediate.4 }}</h6>
+        </a>
+        {% endfor %}
+      </div>
+    </div><!-- /.col-lg-6 -->
+  </div>
+  <!-- End of Intermediate (Scientific Computing) -->
+
+
+  <!-- Intermediate (Software Development Tools) -->
+  <div class="row">
+    <div class="col-lg-6">
+      <h4>Software Development Tools</h4>
+      <div class="list-group">
+        {% for softintermediate in softintermediates %}
+        <a href="#" class="list-group-item">
+          <h4 class="list-group-item-heading">{{ softintermediate.1 }}</h4>
+          <h5 class="list-group-item-heading">{{ softintermediate.0 }}</h5>
+          <h6 class="list-group-item-text text-muted">Applied on - {{ softintermediate.4 }}</h6>
+        </a>
+        {% endfor %}
+      </div>
+    </div><!-- /.col-lg-6 -->
+  </div>
+  <!-- End of Intermediate (Software Development Tools) -->
+
+
+  <!-- Intermediate (Web Development) -->
+  <div class="row">
+    <div class="col-lg-6">
+      <h4>Web Development</h4>
+      <div class="list-group">
+        {% for webintermediate in webintermediates %}
+        <a href="#" class="list-group-item">
+          <h4 class="list-group-item-heading">{{ webintermediate.1 }}</h4>
+          <h5 class="list-group-item-heading">{{ webintermediate.0 }}</h5>
+          <h6 class="list-group-item-text text-muted">Applied on - {{ webintermediate.4 }}</h6>
+        </a>
+        {% endfor %}
+      </div>
+    </div><!-- /.col-lg-6 -->
+  </div>
+  <!-- End of Intermediate (Web Development) -->
+
+
+  <!-- Intermediate (Workshops) -->
+  <div class="row">
+    <div class="col-lg-6">
+      <h4>Workshops</h4>
+      <div class="list-group">
+        {% for workintermediate in workintermediates %}
+        <a href="#" class="list-group-item">
+          <h4 class="list-group-item-heading">{{ workintermediate.1 }}</h4>
+          <h5 class="list-group-item-heading">{{ workintermediate.0 }}</h5>
+          <h6 class="list-group-item-text text-muted">Applied on - {{ workintermediate.4 }}</h6>
+        </a>
+        {% endfor %}
+      </div>
+    </div><!-- /.col-lg-6 -->
+  </div>
+  <!-- End of Intermediate (Workshops) -->
+
 </div>
 {% endblock %}
