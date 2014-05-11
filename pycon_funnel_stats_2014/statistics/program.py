@@ -387,3 +387,445 @@ def advanced(page):
     advanced.append(web_development)
     advanced.append(workshops)
     return advanced
+
+def b_core(page):
+    soup = BeautifulSoup(page)
+    extras = soup.find_all('tbody')
+    proposals = []
+    core = []
+
+    for extra in extras[::2]:
+        proposals.append(extra)
+
+    for proposal in proposals:
+        detail = proposal.find_all('tr')
+        level = detail[1].find_all('td')[5].string
+        section = detail[1].find_all('td')[3].string
+        if level == "Beginner":
+            if section == "Core Python":
+                temp = []
+                temp.append(detail[1].find_all('td')[1].string)
+                temp.append(detail[1].find_all('td')[6].string)
+                core.append(temp)
+    return core
+
+def b_embedded(page):
+    soup = BeautifulSoup(page)
+    extras = soup.find_all('tbody')
+    proposals = []
+    embedded = []
+
+    for extra in extras[::2]:
+        proposals.append(extra)
+
+    for proposal in proposals:
+        detail = proposal.find_all('tr')
+        level = detail[1].find_all('td')[5].string
+        section = detail[1].find_all('td')[3].string
+        if level == "Beginner":
+            if section == "Embedded Python":
+                temp = []
+                temp.append(detail[1].find_all('td')[1].string)
+                temp.append(detail[1].find_all('td')[6].string)
+                embedded.append(temp)
+    return embedded
+
+def b_infrastructure(page):
+    soup = BeautifulSoup(page)
+    extras = soup.find_all('tbody')
+    proposals = []
+    infrastructure = []
+
+    for extra in extras[::2]:
+        proposals.append(extra)
+
+    for proposal in proposals:
+        detail = proposal.find_all('tr')
+        level = detail[1].find_all('td')[5].string
+        section = detail[1].find_all('td')[3].string
+        if level == "Beginner":
+            if section == "Infrastructure":
+                temp = []
+                temp.append(detail[1].find_all('td')[1].string)
+                temp.append(detail[1].find_all('td')[6].string)
+                infrastructure.append(temp)
+    return infrastructure
+
+def b_scientific(page):
+    soup = BeautifulSoup(page)
+    extras = soup.find_all('tbody')
+    proposals = []
+    scientific = []
+
+    for extra in extras[::2]:
+        proposals.append(extra)
+
+    for proposal in proposals:
+        detail = proposal.find_all('tr')
+        level = detail[1].find_all('td')[5].string
+        section = detail[1].find_all('td')[3].string
+        if level == "Beginner":
+            if section == "Scientific Computing":
+                temp = []
+                temp.append(detail[1].find_all('td')[1].string)
+                temp.append(detail[1].find_all('td')[6].string)
+                scientific.append(temp)
+    return scientific
+
+def b_software(page):
+    soup = BeautifulSoup(page)
+    extras = soup.find_all('tbody')
+    proposals = []
+    software = []
+
+    for extra in extras[::2]:
+        proposals.append(extra)
+
+    for proposal in proposals:
+        detail = proposal.find_all('tr')
+        level = detail[1].find_all('td')[5].string
+        section = detail[1].find_all('td')[3].string
+        if level == "Beginner":
+            if section == "Software Development Tools":
+                temp = []
+                temp.append(detail[1].find_all('td')[1].string)
+                temp.append(detail[1].find_all('td')[6].string)
+                software.append(temp)
+    return software
+
+def b_web(page):
+    soup = BeautifulSoup(page)
+    extras = soup.find_all('tbody')
+    proposals = []
+    web = []
+
+    for extra in extras[::2]:
+        proposals.append(extra)
+
+    for proposal in proposals:
+        detail = proposal.find_all('tr')
+        level = detail[1].find_all('td')[5].string
+        section = detail[1].find_all('td')[3].string
+        if level == "Beginner":
+            if section == "Web Development":
+                temp = []
+                temp.append(detail[1].find_all('td')[1].string)
+                temp.append(detail[1].find_all('td')[6].string)
+                web.append(temp)
+    return web
+
+def b_workshops(page):
+    soup = BeautifulSoup(page)
+    extras = soup.find_all('tbody')
+    proposals = []
+    workshops = []
+
+    for extra in extras[::2]:
+        proposals.append(extra)
+
+    for proposal in proposals:
+        detail = proposal.find_all('tr')
+        level = detail[1].find_all('td')[5].string
+        section = detail[1].find_all('td')[3].string
+        if level == "Beginner":
+            if section == "Workshops":
+                temp = []
+                temp.append(detail[1].find_all('td')[1].string)
+                temp.append(detail[1].find_all('td')[6].string)
+                workshops.append(temp)
+    return workshops
+
+def i_core(page):
+    soup = BeautifulSoup(page)
+    extras = soup.find_all('tbody')
+    proposals = []
+    core = []
+
+    for extra in extras[::2]:
+        proposals.append(extra)
+
+    for proposal in proposals:
+        detail = proposal.find_all('tr')
+        level = detail[1].find_all('td')[5].string
+        section = detail[1].find_all('td')[3].string
+        if level == "Intermediate":
+            if section == "Core Python":
+                temp = []
+                temp.append(detail[1].find_all('td')[1].string)
+                temp.append(detail[1].find_all('td')[6].string)
+                core.append(temp)
+    return core
+
+def i_embedded(page):
+    soup = BeautifulSoup(page)
+    extras = soup.find_all('tbody')
+    proposals = []
+    embedded = []
+
+    for extra in extras[::2]:
+        proposals.append(extra)
+
+    for proposal in proposals:
+        detail = proposal.find_all('tr')
+        level = detail[1].find_all('td')[5].string
+        section = detail[1].find_all('td')[3].string
+        if level == "Intermediate":
+            if section == "Embedded Python":
+                temp = []
+                temp.append(detail[1].find_all('td')[1].string)
+                temp.append(detail[1].find_all('td')[6].string)
+                embedded.append(temp)
+    return embedded
+
+def i_infrastructure(page):
+    soup = BeautifulSoup(page)
+    extras = soup.find_all('tbody')
+    proposals = []
+    infrastructure = []
+
+    for extra in extras[::2]:
+        proposals.append(extra)
+
+    for proposal in proposals:
+        detail = proposal.find_all('tr')
+        level = detail[1].find_all('td')[5].string
+        section = detail[1].find_all('td')[3].string
+        if level == "Intermediate":
+            if section == "Infrastructure":
+                temp = []
+                temp.append(detail[1].find_all('td')[1].string)
+                temp.append(detail[1].find_all('td')[6].string)
+                infrastructure.append(temp)
+    return infrastructure
+
+def i_scientific(page):
+    soup = BeautifulSoup(page)
+    extras = soup.find_all('tbody')
+    proposals = []
+    scientific = []
+
+    for extra in extras[::2]:
+        proposals.append(extra)
+
+    for proposal in proposals:
+        detail = proposal.find_all('tr')
+        level = detail[1].find_all('td')[5].string
+        section = detail[1].find_all('td')[3].string
+        if level == "Intermediate":
+            if section == "Scientific Computing":
+                temp = []
+                temp.append(detail[1].find_all('td')[1].string)
+                temp.append(detail[1].find_all('td')[6].string)
+                scientific.append(temp)
+    return scientific
+
+def i_software(page):
+    soup = BeautifulSoup(page)
+    extras = soup.find_all('tbody')
+    proposals = []
+    software = []
+
+    for extra in extras[::2]:
+        proposals.append(extra)
+
+    for proposal in proposals:
+        detail = proposal.find_all('tr')
+        level = detail[1].find_all('td')[5].string
+        section = detail[1].find_all('td')[3].string
+        if level == "Intermediate":
+            if section == "Software Development Tools":
+                temp = []
+                temp.append(detail[1].find_all('td')[1].string)
+                temp.append(detail[1].find_all('td')[6].string)
+                software.append(temp)
+    return software
+
+def i_web(page):
+    soup = BeautifulSoup(page)
+    extras = soup.find_all('tbody')
+    proposals = []
+    web = []
+
+    for extra in extras[::2]:
+        proposals.append(extra)
+
+    for proposal in proposals:
+        detail = proposal.find_all('tr')
+        level = detail[1].find_all('td')[5].string
+        section = detail[1].find_all('td')[3].string
+        if level == "Intermediate":
+            if section == "Web Development":
+                temp = []
+                temp.append(detail[1].find_all('td')[1].string)
+                temp.append(detail[1].find_all('td')[6].string)
+                web.append(temp)
+    return web
+
+def i_workshops(page):
+    soup = BeautifulSoup(page)
+    extras = soup.find_all('tbody')
+    proposals = []
+    workshops = []
+
+    for extra in extras[::2]:
+        proposals.append(extra)
+
+    for proposal in proposals:
+        detail = proposal.find_all('tr')
+        level = detail[1].find_all('td')[5].string
+        section = detail[1].find_all('td')[3].string
+        if level == "Intermediate":
+            if section == "Workshops":
+                temp = []
+                temp.append(detail[1].find_all('td')[1].string)
+                temp.append(detail[1].find_all('td')[6].string)
+                workshops.append(temp)
+    return workshops
+
+def a_core(page):
+    soup = BeautifulSoup(page)
+    extras = soup.find_all('tbody')
+    proposals = []
+    core = []
+
+    for extra in extras[::2]:
+        proposals.append(extra)
+
+    for proposal in proposals:
+        detail = proposal.find_all('tr')
+        level = detail[1].find_all('td')[5].string
+        section = detail[1].find_all('td')[3].string
+        if level == "Advanced":
+            if section == "Core Python":
+                temp = []
+                temp.append(detail[1].find_all('td')[1].string)
+                temp.append(detail[1].find_all('td')[6].string)
+                core.append(temp)
+    return core
+
+def a_embedded(page):
+    soup = BeautifulSoup(page)
+    extras = soup.find_all('tbody')
+    proposals = []
+    embedded = []
+
+    for extra in extras[::2]:
+        proposals.append(extra)
+
+    for proposal in proposals:
+        detail = proposal.find_all('tr')
+        level = detail[1].find_all('td')[5].string
+        section = detail[1].find_all('td')[3].string
+        if level == "Advanced":
+            if section == "Embedded Python":
+                temp = []
+                temp.append(detail[1].find_all('td')[1].string)
+                temp.append(detail[1].find_all('td')[6].string)
+                embedded.append(temp)
+    return embedded
+
+def a_infrastructure(page):
+    soup = BeautifulSoup(page)
+    extras = soup.find_all('tbody')
+    proposals = []
+    infrastructure = []
+
+    for extra in extras[::2]:
+        proposals.append(extra)
+
+    for proposal in proposals:
+        detail = proposal.find_all('tr')
+        level = detail[1].find_all('td')[5].string
+        section = detail[1].find_all('td')[3].string
+        if level == "Advanced":
+            if section == "Infrastructure":
+                temp = []
+                temp.append(detail[1].find_all('td')[1].string)
+                temp.append(detail[1].find_all('td')[6].string)
+                infrastructure.append(temp)
+    return infrastructure
+
+def a_scientific(page):
+    soup = BeautifulSoup(page)
+    extras = soup.find_all('tbody')
+    proposals = []
+    scientific = []
+
+    for extra in extras[::2]:
+        proposals.append(extra)
+
+    for proposal in proposals:
+        detail = proposal.find_all('tr')
+        level = detail[1].find_all('td')[5].string
+        section = detail[1].find_all('td')[3].string
+        if level == "Advanced":
+            if section == "Scientific Computing":
+                temp = []
+                temp.append(detail[1].find_all('td')[1].string)
+                temp.append(detail[1].find_all('td')[6].string)
+                scientific.append(temp)
+    return scientific
+
+def a_software(page):
+    soup = BeautifulSoup(page)
+    extras = soup.find_all('tbody')
+    proposals = []
+    software = []
+
+    for extra in extras[::2]:
+        proposals.append(extra)
+
+    for proposal in proposals:
+        detail = proposal.find_all('tr')
+        level = detail[1].find_all('td')[5].string
+        section = detail[1].find_all('td')[3].string
+        if level == "Advanced":
+            if section == "Software Development Tools":
+                temp = []
+                temp.append(detail[1].find_all('td')[1].string)
+                temp.append(detail[1].find_all('td')[6].string)
+                software.append(temp)
+    return software
+
+def a_web(page):
+    soup = BeautifulSoup(page)
+    extras = soup.find_all('tbody')
+    proposals = []
+    web = []
+
+    for extra in extras[::2]:
+        proposals.append(extra)
+
+    for proposal in proposals:
+        detail = proposal.find_all('tr')
+        level = detail[1].find_all('td')[5].string
+        section = detail[1].find_all('td')[3].string
+        if level == "Advanced":
+            if section == "Web Development":
+                temp = []
+                temp.append(detail[1].find_all('td')[1].string)
+                temp.append(detail[1].find_all('td')[6].string)
+                web.append(temp)
+    return web
+
+def a_workshops(page):
+    soup = BeautifulSoup(page)
+    extras = soup.find_all('tbody')
+    proposals = []
+    workshops = []
+
+    for extra in extras[::2]:
+        proposals.append(extra)
+
+    for proposal in proposals:
+        detail = proposal.find_all('tr')
+        level = detail[1].find_all('td')[5].string
+        section = detail[1].find_all('td')[3].string
+        if level == "Advanced":
+            if section == "Workshops":
+                temp = []
+                temp.append(detail[1].find_all('td')[1].string)
+                temp.append(detail[1].find_all('td')[6].string)
+                workshops.append(temp)
+    return workshops
+
