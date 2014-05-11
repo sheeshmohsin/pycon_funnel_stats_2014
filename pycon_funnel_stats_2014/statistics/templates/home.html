@@ -135,13 +135,14 @@
 
   <div class="row">
     <div class="col-lg-12">
-      <h3>Beginner</h3>
+      <h3 style="color:#3232CD"><i><b>BEGINNER</b></i></h3>
       <hr>
     </div><!-- /.col-lg-6 -->
   </div>
 
 
   <!-- Beginners (Core Python) -->
+  {% if corebeginners %}
   <div class="row">
     <div class="col-lg-6">
       <h4>Core Python</h4>
@@ -156,10 +157,12 @@
       </div>
     </div><!-- /.col-lg-6 -->
   </div>
+  {% endif %}
   <!-- End of Beginners (Core Python) -->
 
 
   <!-- Beginners (Embedded Python) -->
+  {% if embeddedbeginners %}
   <div class="row">
     <div class="col-lg-6">
       <h4>Embedded Python</h4>
@@ -174,10 +177,12 @@
       </div>
     </div><!-- /.col-lg-6 -->
   </div>
+  {% endif %}
   <!-- End of Beginners (Embedded Python) -->
 
 
   <!-- Beginners (Infrastructure) -->
+  {% if infrabeginners %}
   <div class="row">
     <div class="col-lg-6">
       <h4>Infrastructure</h4>
@@ -192,10 +197,12 @@
       </div>
     </div><!-- /.col-lg-6 -->
   </div>
+  {% endif %}
   <!-- End of Beginners (Infrastructure) -->
 
 
   <!-- Beginners (Scientific Computing) -->
+  {% if scibeginners %}
   <div class="row">
     <div class="col-lg-6">
       <h4>Scientific Computing</h4>
@@ -210,10 +217,12 @@
       </div>
     </div><!-- /.col-lg-6 -->
   </div>
+  {% endif %}
   <!-- End of Beginners (Scientific Computing) -->
 
 
   <!-- Beginners (Software Development Tools) -->
+  {% if softbeginners %}
   <div class="row">
     <div class="col-lg-6">
       <h4>Software Development Tools</h4>
@@ -228,10 +237,12 @@
       </div>
     </div><!-- /.col-lg-6 -->
   </div>
+  {% endif %}
   <!-- End of Beginners (Software Development Tools) -->
 
 
   <!-- Beginners (Web Development) -->
+  {% if webbeginners %}
   <div class="row">
     <div class="col-lg-6">
       <h4>Web Development</h4>
@@ -246,10 +257,12 @@
       </div>
     </div><!-- /.col-lg-6 -->
   </div>
+  {% endif %}
   <!-- End of Beginners (Web Development) -->
 
 
   <!-- Beginners (Workshops) -->
+  {% if workbeginners %}
   <div class="row">
     <div class="col-lg-6">
       <h4>Workshops</h4>
@@ -264,18 +277,20 @@
       </div>
     </div><!-- /.col-lg-6 -->
   </div>
+  {% endif %}
   <!-- End of Beginners (Workshops) -->
 
 
   <div class="row">
     <div class="col-lg-12">
-      <h3>Intermediate</h3>
+      <h3 style="color:#3232CD"><i><b>INTERMEDIATE</b></i></h3>
       <hr>
     </div><!-- /.col-lg-6 -->
   </div>
 
 
   <!-- Intermediate (Core Python) -->
+  {% if coreintermediates %}
   <div class="row">
     <div class="col-lg-6">
       <h4>Core Python</h4>
@@ -290,10 +305,12 @@
       </div>
     </div><!-- /.col-lg-6 -->
   </div>
+  {% endif %}
   <!-- End of Intermediate (Core Python) -->
 
 
   <!-- Intermediate (Embedded Python) -->
+  {% if embeddedintermediates %}
   <div class="row">
     <div class="col-lg-6">
       <h4>Embedded Python</h4>
@@ -308,10 +325,12 @@
       </div>
     </div><!-- /.col-lg-6 -->
   </div>
+  {% endif %}
   <!-- End of Intermediate (Embedded Python) -->
 
 
   <!-- Intermediate (Infrastructure) -->
+  {% if infraintermediates %}
   <div class="row">
     <div class="col-lg-6">
       <h4>Infrastructure</h4>
@@ -326,10 +345,12 @@
       </div>
     </div><!-- /.col-lg-6 -->
   </div>
+  {% endif %}
   <!-- End of Intermediate (Infrastructure) -->
 
 
   <!-- Intermediate (Scientific Computing) -->
+  {% if sciintermediates %}
   <div class="row">
     <div class="col-lg-6">
       <h4>Scientific Computing</h4>
@@ -344,10 +365,12 @@
       </div>
     </div><!-- /.col-lg-6 -->
   </div>
+  {% endif %}
   <!-- End of Intermediate (Scientific Computing) -->
 
 
   <!-- Intermediate (Software Development Tools) -->
+  {% if softintermediates %}
   <div class="row">
     <div class="col-lg-6">
       <h4>Software Development Tools</h4>
@@ -362,10 +385,12 @@
       </div>
     </div><!-- /.col-lg-6 -->
   </div>
+  {% endif %}
   <!-- End of Intermediate (Software Development Tools) -->
 
 
   <!-- Intermediate (Web Development) -->
+  {% if webintermediates %}
   <div class="row">
     <div class="col-lg-6">
       <h4>Web Development</h4>
@@ -380,10 +405,12 @@
       </div>
     </div><!-- /.col-lg-6 -->
   </div>
+  {% endif %}
   <!-- End of Intermediate (Web Development) -->
 
 
   <!-- Intermediate (Workshops) -->
+  {% if workintermediates %}
   <div class="row">
     <div class="col-lg-6">
       <h4>Workshops</h4>
@@ -398,7 +425,161 @@
       </div>
     </div><!-- /.col-lg-6 -->
   </div>
+  {% endif %}
   <!-- End of Intermediate (Workshops) -->
+
+
+  <div class="row">
+    <div class="col-lg-12">
+      <h3 style="color:#3232CD"><i><b>ADVANCED</b></i></h3>
+      <hr>
+    </div><!-- /.col-lg-6 -->
+  </div>
+
+
+
+  <!-- Advanced (Core Python) -->
+  {% if coreadvances %}
+  <div class="row">
+    <div class="col-lg-6">
+      <h4>Core Python</h4>
+      <div class="list-group">
+        {% for coreadvance in coreadvances %}
+        <a href="#" class="list-group-item">
+          <h4 class="list-group-item-heading">{{ coreadvance.1 }}</h4>
+          <h5 class="list-group-item-heading">{{ coreadvance.0 }}</h5>
+          <h6 class="list-group-item-text text-muted">Applied on - {{ coreadvance.4 }}</h6>
+        </a>
+        {% endfor %}
+      </div>
+    </div><!-- /.col-lg-6 -->
+  </div>
+  {% endif %}
+  <!-- End of Intermediate (Core Python) -->
+
+
+  <!-- Advanced (Embedded Python) -->
+  {% if embeddedadvances %}
+  <div class="row">
+    <div class="col-lg-6">
+      <h4>Embedded Python</h4>
+      <div class="list-group">
+        {% for embeddedadvance in embeddedadvances %}
+        <a href="#" class="list-group-item">
+          <h4 class="list-group-item-heading">{{ embeddedadvance.1 }}</h4>
+          <h5 class="list-group-item-heading">{{ embeddedadvance.0 }}</h5>
+          <h6 class="list-group-item-text text-muted">Applied on - {{ embeddedadvance.4 }}</h6>
+        </a>
+        {% endfor %}
+      </div>
+    </div><!-- /.col-lg-6 -->
+  </div>
+  {% endif %}
+  <!-- End of Advanced (Embedded Python) -->
+
+
+  <!-- Advanced (Infrastructure) -->
+  {% if infraadvances %}
+  <div class="row">
+    <div class="col-lg-6">
+      <h4>Infrastructure</h4>
+      <div class="list-group">
+        {% for infraadvance in infraadvances %}
+        <a href="#" class="list-group-item">
+          <h4 class="list-group-item-heading">{{ infraadvance.1 }}</h4>
+          <h5 class="list-group-item-heading">{{ infraadvance.0 }}</h5>
+          <h6 class="list-group-item-text text-muted">Applied on - {{ infraadvance.4 }}</h6>
+        </a>
+        {% endfor %}
+      </div>
+    </div><!-- /.col-lg-6 -->
+  </div>
+  {% endif %}
+  <!-- End of Advanced (Infrastructure) -->
+
+
+  <!-- Advanced (Scientific Computing) -->
+  {% if sciadvances %}
+  <div class="row">
+    <div class="col-lg-6">
+      <h4>Scientific Computing</h4>
+      <div class="list-group">
+        {% for sciadvance in sciadvances %}
+        <a href="#" class="list-group-item">
+          <h4 class="list-group-item-heading">{{ sciadvance.1 }}</h4>
+          <h5 class="list-group-item-heading">{{ sciadvance.0 }}</h5>
+          <h6 class="list-group-item-text text-muted">Applied on - {{ sciadvance.4 }}</h6>
+        </a>
+        {% endfor %}
+      </div>
+    </div><!-- /.col-lg-6 -->
+  </div>
+  {% endif %}
+  <!-- End of Advanced (Scientific Computing) -->
+
+
+  <!-- Advanced (Software Development Tools) -->
+  {% if softadvances %}
+  <div class="row">
+    <div class="col-lg-6">
+      <h4>Software Development Tools</h4>
+      <div class="list-group">
+        {% for softadvance in softadvances %}
+        <a href="#" class="list-group-item">
+          <h4 class="list-group-item-heading">{{ softadvance.1 }}</h4>
+          <h5 class="list-group-item-heading">{{ softadvance.0 }}</h5>
+          <h6 class="list-group-item-text text-muted">Applied on - {{ softadvance.4 }}</h6>
+        </a>
+        {% endfor %}
+      </div>
+    </div><!-- /.col-lg-6 -->
+  </div>
+  {% endif %}
+  <!-- End of Advanced (Software Development Tools) -->
+
+
+  <!-- Advanced (Web Development) -->
+  {% if webadvances %}
+  <div class="row">
+    <div class="col-lg-6">
+      <h4>Web Development</h4>
+      <div class="list-group">
+        {% for webadvance in webadvances %}
+        <a href="#" class="list-group-item">
+          <h4 class="list-group-item-heading">{{ webadvance.1 }}</h4>
+          <h5 class="list-group-item-heading">{{ webadvance.0 }}</h5>
+          <h6 class="list-group-item-text text-muted">Applied on - {{ webadvance.4 }}</h6>
+        </a>
+        {% endfor %}
+      </div>
+    </div><!-- /.col-lg-6 -->
+  </div>
+  {% endif %}
+  <!-- End of Advanced (Web Development) -->
+
+
+  <!-- Advanced (Workshops) -->
+  {% if workadvances %}
+  <div class="row">
+    <div class="col-lg-6">
+      <h4>Workshops</h4>
+      <div class="list-group">
+        {% for workadvance in workadvances %}
+        <a href="#" class="list-group-item">
+          <h4 class="list-group-item-heading">{{ workadvance.1 }}</h4>
+          <h5 class="list-group-item-heading">{{ workadvance.0 }}</h5>
+          <h6 class="list-group-item-text text-muted">Applied on - {{ workadvance.4 }}</h6>
+        </a>
+        {% endfor %}
+      </div>
+    </div><!-- /.col-lg-6 -->
+  </div>
+  {% endif %}
+  <!-- End of Advanced (Workshops) -->
+
+<br><br><br>
+
+
 
 </div>
 {% endblock %}
