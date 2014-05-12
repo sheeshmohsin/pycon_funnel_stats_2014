@@ -16,6 +16,7 @@ def stats(request):
     beginnerlist = program.beginner(page)
     intermediatelist = program.intermediate(page)
     advancedlist = program.advanced(page)
+    b_core = program.b_core(page)
     context = Context({'total':total, 'begineer':proposallist[0],
             'intermediate': proposallist[1],'advanced':proposallist[2], 
             'beginnerchart': section[0], 'intermediatechart': section[1], 
@@ -29,6 +30,7 @@ def stats(request):
             'workintermediates' : intermediatelist[6], 'coreadvances' : advancedlist[0],
             'embeddedadvances' : advancedlist[1], 'infraadvances' : advancedlist[2],
             'sciadvances' : advancedlist[3], 'softadvances' : advancedlist[4],
-            'webadvances' : advancedlist[5], 'workadvaces' : advancedlist[6]})
+            'webadvances' : advancedlist[5], 'workadvaces' : advancedlist[6],
+            'bcore' : b_core})
     return render_to_response("home.html", context)
 

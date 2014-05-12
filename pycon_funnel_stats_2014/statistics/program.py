@@ -393,6 +393,8 @@ def b_core(page):
     extras = soup.find_all('tbody')
     proposals = []
     core = []
+    working = ['Name', 'Likes']
+    core.append(working)
 
     for extra in extras[::2]:
         proposals.append(extra)
