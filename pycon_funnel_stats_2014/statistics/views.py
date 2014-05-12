@@ -2,7 +2,7 @@ from django.shortcuts import get_object_or_404, render, render_to_response
 from django.http import HttpResponseRedirect
 from django.core.urlresolvers import reverse
 from django.views import generic
-from django.utils import timezone
+from django.utils import timezone, simplejson
 from django.template import Context
 from urllib2 import urlopen
 import program
@@ -16,7 +16,13 @@ def stats(request):
     beginnerlist = program.beginner(page)
     intermediatelist = program.intermediate(page)
     advancedlist = program.advanced(page)
-    b_core = program.b_core(page)
+    bcore = program.b_core(page)
+    bembedded = program.b_embedded(page)
+    binfra = program.b_infrastructure(page)
+    bscientific = program.b_scientific(page)
+    bsoftware = program.b_software(page)
+    bweb = program.b_web(page)
+    bwork = program.b_workshops(page)
     context = Context({'total':total, 'begineer':proposallist[0],
             'intermediate': proposallist[1],'advanced':proposallist[2], 
             'beginnerchart': section[0], 'intermediatechart': section[1], 
@@ -31,6 +37,8 @@ def stats(request):
             'embeddedadvances' : advancedlist[1], 'infraadvances' : advancedlist[2],
             'sciadvances' : advancedlist[3], 'softadvances' : advancedlist[4],
             'webadvances' : advancedlist[5], 'workadvaces' : advancedlist[6],
-            'bcore' : b_core})
+            'bcore' : bcore, 'bembedded' : bembedded, 'binfra' : binfra,
+            'bscientific' : bscientific, 'bsoftware' : bsoftware, 'bweb' : bweb,
+            'bwork' : bwork})
     return render_to_response("home.html", context)
 

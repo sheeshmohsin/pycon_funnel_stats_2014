@@ -393,7 +393,7 @@ def b_core(page):
     extras = soup.find_all('tbody')
     proposals = []
     core = []
-    working = ['Name', 'Likes']
+    working = ['Speaker', 'Likes']
     core.append(working)
 
     for extra in extras[::2]:
@@ -406,8 +406,8 @@ def b_core(page):
         if level == "Beginner":
             if section == "Core Python":
                 temp = []
-                temp.append(detail[1].find_all('td')[1].string)
-                temp.append(detail[1].find_all('td')[6].string)
+                temp.append(str(detail[1].find_all('td')[1].string))
+                temp.append(int(detail[1].find_all('td')[6].string))
                 core.append(temp)
     return core
 
@@ -416,6 +416,8 @@ def b_embedded(page):
     extras = soup.find_all('tbody')
     proposals = []
     embedded = []
+    working = ['Speaker', 'Likes']
+    embedded.append(working)
 
     for extra in extras[::2]:
         proposals.append(extra)
@@ -427,8 +429,8 @@ def b_embedded(page):
         if level == "Beginner":
             if section == "Embedded Python":
                 temp = []
-                temp.append(detail[1].find_all('td')[1].string)
-                temp.append(detail[1].find_all('td')[6].string)
+                temp.append(str(detail[1].find_all('td')[1].string))
+                temp.append(int(detail[1].find_all('td')[6].string))
                 embedded.append(temp)
     return embedded
 
@@ -437,6 +439,8 @@ def b_infrastructure(page):
     extras = soup.find_all('tbody')
     proposals = []
     infrastructure = []
+    working = ['Speaker', 'Likes']
+    infrastructure.append(working)
 
     for extra in extras[::2]:
         proposals.append(extra)
@@ -448,8 +452,8 @@ def b_infrastructure(page):
         if level == "Beginner":
             if section == "Infrastructure":
                 temp = []
-                temp.append(detail[1].find_all('td')[1].string)
-                temp.append(detail[1].find_all('td')[6].string)
+                temp.append(str(detail[1].find_all('td')[1].string))
+                temp.append(int(detail[1].find_all('td')[6].string))
                 infrastructure.append(temp)
     return infrastructure
 
@@ -458,6 +462,8 @@ def b_scientific(page):
     extras = soup.find_all('tbody')
     proposals = []
     scientific = []
+    working = ['Speaker', 'Likes']
+    scientific.append(working)
 
     for extra in extras[::2]:
         proposals.append(extra)
@@ -469,8 +475,8 @@ def b_scientific(page):
         if level == "Beginner":
             if section == "Scientific Computing":
                 temp = []
-                temp.append(detail[1].find_all('td')[1].string)
-                temp.append(detail[1].find_all('td')[6].string)
+                temp.append(str(detail[1].find_all('td')[1].string))
+                temp.append(int(detail[1].find_all('td')[6].string))
                 scientific.append(temp)
     return scientific
 
@@ -479,6 +485,8 @@ def b_software(page):
     extras = soup.find_all('tbody')
     proposals = []
     software = []
+    working = ['Speaker', 'Likes']
+    software.append(working)
 
     for extra in extras[::2]:
         proposals.append(extra)
@@ -490,8 +498,8 @@ def b_software(page):
         if level == "Beginner":
             if section == "Software Development Tools":
                 temp = []
-                temp.append(detail[1].find_all('td')[1].string)
-                temp.append(detail[1].find_all('td')[6].string)
+                temp.append(str(detail[1].find_all('td')[1].string))
+                temp.append(int(detail[1].find_all('td')[6].string))
                 software.append(temp)
     return software
 
@@ -500,6 +508,8 @@ def b_web(page):
     extras = soup.find_all('tbody')
     proposals = []
     web = []
+    working = ['Speaker', 'Likes']
+    web.append(working)
 
     for extra in extras[::2]:
         proposals.append(extra)
@@ -511,8 +521,8 @@ def b_web(page):
         if level == "Beginner":
             if section == "Web Development":
                 temp = []
-                temp.append(detail[1].find_all('td')[1].string)
-                temp.append(detail[1].find_all('td')[6].string)
+                temp.append(str(detail[1].find_all('td')[1].string))
+                temp.append(int(detail[1].find_all('td')[6].string))
                 web.append(temp)
     return web
 
@@ -521,6 +531,8 @@ def b_workshops(page):
     extras = soup.find_all('tbody')
     proposals = []
     workshops = []
+    working = ['Speaker', 'Likes']
+    workshops.append(working)
 
     for extra in extras[::2]:
         proposals.append(extra)
@@ -532,8 +544,8 @@ def b_workshops(page):
         if level == "Beginner":
             if section == "Workshops":
                 temp = []
-                temp.append(detail[1].find_all('td')[1].string)
-                temp.append(detail[1].find_all('td')[6].string)
+                temp.append(str(detail[1].find_all('td')[1].string))
+                temp.append(int(detail[1].find_all('td')[6].string))
                 workshops.append(temp)
     return workshops
 
@@ -542,6 +554,8 @@ def i_core(page):
     extras = soup.find_all('tbody')
     proposals = []
     core = []
+    working = ['Speaker', 'Likes']
+    core.append(working)
 
     for extra in extras[::2]:
         proposals.append(extra)
@@ -553,8 +567,8 @@ def i_core(page):
         if level == "Intermediate":
             if section == "Core Python":
                 temp = []
-                temp.append(detail[1].find_all('td')[1].string)
-                temp.append(detail[1].find_all('td')[6].string)
+                temp.append(str(detail[1].find_all('td')[1].string))
+                temp.append(int(detail[1].find_all('td')[6].string))
                 core.append(temp)
     return core
 
@@ -563,6 +577,8 @@ def i_embedded(page):
     extras = soup.find_all('tbody')
     proposals = []
     embedded = []
+    working = ['Speaker', 'Likes']
+    embedded.append(working)
 
     for extra in extras[::2]:
         proposals.append(extra)
@@ -574,8 +590,8 @@ def i_embedded(page):
         if level == "Intermediate":
             if section == "Embedded Python":
                 temp = []
-                temp.append(detail[1].find_all('td')[1].string)
-                temp.append(detail[1].find_all('td')[6].string)
+                temp.append(str(detail[1].find_all('td')[1].string))
+                temp.append(int(detail[1].find_all('td')[6].string))
                 embedded.append(temp)
     return embedded
 
@@ -584,6 +600,8 @@ def i_infrastructure(page):
     extras = soup.find_all('tbody')
     proposals = []
     infrastructure = []
+    working = ['Speaker', 'Likes']
+    infrastructure.append(working)
 
     for extra in extras[::2]:
         proposals.append(extra)
@@ -595,8 +613,8 @@ def i_infrastructure(page):
         if level == "Intermediate":
             if section == "Infrastructure":
                 temp = []
-                temp.append(detail[1].find_all('td')[1].string)
-                temp.append(detail[1].find_all('td')[6].string)
+                temp.append(str(detail[1].find_all('td')[1].string))
+                temp.append(int(detail[1].find_all('td')[6].string))
                 infrastructure.append(temp)
     return infrastructure
 
@@ -605,6 +623,8 @@ def i_scientific(page):
     extras = soup.find_all('tbody')
     proposals = []
     scientific = []
+    working = ['Speaker', 'Likes']
+    scientific.append(working)
 
     for extra in extras[::2]:
         proposals.append(extra)
@@ -616,8 +636,8 @@ def i_scientific(page):
         if level == "Intermediate":
             if section == "Scientific Computing":
                 temp = []
-                temp.append(detail[1].find_all('td')[1].string)
-                temp.append(detail[1].find_all('td')[6].string)
+                temp.append(str(detail[1].find_all('td')[1].string))
+                temp.append(int(detail[1].find_all('td')[6].string))
                 scientific.append(temp)
     return scientific
 
@@ -626,6 +646,8 @@ def i_software(page):
     extras = soup.find_all('tbody')
     proposals = []
     software = []
+    working = ['Speaker', 'Likes']
+    software.append(working)
 
     for extra in extras[::2]:
         proposals.append(extra)
@@ -637,8 +659,8 @@ def i_software(page):
         if level == "Intermediate":
             if section == "Software Development Tools":
                 temp = []
-                temp.append(detail[1].find_all('td')[1].string)
-                temp.append(detail[1].find_all('td')[6].string)
+                temp.append(str(detail[1].find_all('td')[1].string))
+                temp.append(int(detail[1].find_all('td')[6].string))
                 software.append(temp)
     return software
 
@@ -647,6 +669,8 @@ def i_web(page):
     extras = soup.find_all('tbody')
     proposals = []
     web = []
+    working = ['Speaker', 'Likes']
+    web.append(working)
 
     for extra in extras[::2]:
         proposals.append(extra)
@@ -658,8 +682,8 @@ def i_web(page):
         if level == "Intermediate":
             if section == "Web Development":
                 temp = []
-                temp.append(detail[1].find_all('td')[1].string)
-                temp.append(detail[1].find_all('td')[6].string)
+                temp.append(str(detail[1].find_all('td')[1].string))
+                temp.append(int(detail[1].find_all('td')[6].string))
                 web.append(temp)
     return web
 
@@ -668,6 +692,8 @@ def i_workshops(page):
     extras = soup.find_all('tbody')
     proposals = []
     workshops = []
+    working = ['Speaker', 'Likes']
+    workshops.append(working)
 
     for extra in extras[::2]:
         proposals.append(extra)
@@ -679,8 +705,8 @@ def i_workshops(page):
         if level == "Intermediate":
             if section == "Workshops":
                 temp = []
-                temp.append(detail[1].find_all('td')[1].string)
-                temp.append(detail[1].find_all('td')[6].string)
+                temp.append(str(detail[1].find_all('td')[1].string))
+                temp.append(int(detail[1].find_all('td')[6].string))
                 workshops.append(temp)
     return workshops
 
@@ -689,6 +715,8 @@ def a_core(page):
     extras = soup.find_all('tbody')
     proposals = []
     core = []
+    working = ['Speaker', 'Likes']
+    core.append(working)
 
     for extra in extras[::2]:
         proposals.append(extra)
@@ -700,8 +728,8 @@ def a_core(page):
         if level == "Advanced":
             if section == "Core Python":
                 temp = []
-                temp.append(detail[1].find_all('td')[1].string)
-                temp.append(detail[1].find_all('td')[6].string)
+                temp.append(str(detail[1].find_all('td')[1].string))
+                temp.append(int(detail[1].find_all('td')[6].string))
                 core.append(temp)
     return core
 
@@ -710,6 +738,8 @@ def a_embedded(page):
     extras = soup.find_all('tbody')
     proposals = []
     embedded = []
+    working = ['Speaker', 'Likes']
+    embedded.append(working)
 
     for extra in extras[::2]:
         proposals.append(extra)
@@ -721,8 +751,8 @@ def a_embedded(page):
         if level == "Advanced":
             if section == "Embedded Python":
                 temp = []
-                temp.append(detail[1].find_all('td')[1].string)
-                temp.append(detail[1].find_all('td')[6].string)
+                temp.append(str(detail[1].find_all('td')[1].string))
+                temp.append(int(detail[1].find_all('td')[6].string))
                 embedded.append(temp)
     return embedded
 
@@ -731,6 +761,8 @@ def a_infrastructure(page):
     extras = soup.find_all('tbody')
     proposals = []
     infrastructure = []
+    working = ['Speaker', 'Likes']
+    infrastructure.append(working)
 
     for extra in extras[::2]:
         proposals.append(extra)
@@ -742,8 +774,8 @@ def a_infrastructure(page):
         if level == "Advanced":
             if section == "Infrastructure":
                 temp = []
-                temp.append(detail[1].find_all('td')[1].string)
-                temp.append(detail[1].find_all('td')[6].string)
+                temp.append(str(detail[1].find_all('td')[1].string))
+                temp.append(int(detail[1].find_all('td')[6].string))
                 infrastructure.append(temp)
     return infrastructure
 
@@ -752,6 +784,8 @@ def a_scientific(page):
     extras = soup.find_all('tbody')
     proposals = []
     scientific = []
+    working = ['Speaker', 'Likes']
+    scientific.append(working)
 
     for extra in extras[::2]:
         proposals.append(extra)
@@ -763,8 +797,8 @@ def a_scientific(page):
         if level == "Advanced":
             if section == "Scientific Computing":
                 temp = []
-                temp.append(detail[1].find_all('td')[1].string)
-                temp.append(detail[1].find_all('td')[6].string)
+                temp.append(str(detail[1].find_all('td')[1].string))
+                temp.append(int(detail[1].find_all('td')[6].string))
                 scientific.append(temp)
     return scientific
 
@@ -773,6 +807,8 @@ def a_software(page):
     extras = soup.find_all('tbody')
     proposals = []
     software = []
+    working = ['Speaker', 'Likes']
+    software.append(working)
 
     for extra in extras[::2]:
         proposals.append(extra)
@@ -784,8 +820,8 @@ def a_software(page):
         if level == "Advanced":
             if section == "Software Development Tools":
                 temp = []
-                temp.append(detail[1].find_all('td')[1].string)
-                temp.append(detail[1].find_all('td')[6].string)
+                temp.append(str(detail[1].find_all('td')[1].string))
+                temp.append(int(detail[1].find_all('td')[6].string))
                 software.append(temp)
     return software
 
@@ -794,6 +830,8 @@ def a_web(page):
     extras = soup.find_all('tbody')
     proposals = []
     web = []
+    working = ['Speaker', 'Likes']
+    web.append(working)
 
     for extra in extras[::2]:
         proposals.append(extra)
@@ -805,8 +843,8 @@ def a_web(page):
         if level == "Advanced":
             if section == "Web Development":
                 temp = []
-                temp.append(detail[1].find_all('td')[1].string)
-                temp.append(detail[1].find_all('td')[6].string)
+                temp.append(str(detail[1].find_all('td')[1].string))
+                temp.append(int(detail[1].find_all('td')[6].string))
                 web.append(temp)
     return web
 
@@ -815,6 +853,8 @@ def a_workshops(page):
     extras = soup.find_all('tbody')
     proposals = []
     workshops = []
+    working = ['Speaker', 'Likes']
+    workshops.append(working)
 
     for extra in extras[::2]:
         proposals.append(extra)
@@ -826,8 +866,8 @@ def a_workshops(page):
         if level == "Advanced":
             if section == "Workshops":
                 temp = []
-                temp.append(detail[1].find_all('td')[1].string)
-                temp.append(detail[1].find_all('td')[6].string)
+                temp.append(str(detail[1].find_all('td')[1].string))
+                temp.append(int(detail[1].find_all('td')[6].string))
                 workshops.append(temp)
     return workshops
 

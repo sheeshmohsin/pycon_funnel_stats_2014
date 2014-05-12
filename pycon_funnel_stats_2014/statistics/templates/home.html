@@ -93,18 +93,115 @@
         chart.draw(data, options);
       }
     </script>
+
     <script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart"]});
       google.setOnLoadCallback(drawChart);
       function drawChart() {
-        var data = google.visualization.arrayToDataTable( {{ bcore }} );
+        var data = google.visualization.arrayToDataTable({{ bcore|safe }});
 
         var options = {
           title: 'Company Performance',
-          hAxis: {title: 'Year', titleTextStyle: {color: 'red'}}
+          hAxis: {title: 'Speaker', titleTextStyle: {color: 'red'}}
         };
 
         var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable({{ bembedded|safe }});
+
+        var options = {
+          title: 'Company Performance',
+          hAxis: {title: 'Speaker', titleTextStyle: {color: 'red'}}
+        };
+
+        var chart = new google.visualization.ColumnChart(document.getElementById('chart_div1'));
+        chart.draw(data, options);
+      }
+    </script>
+
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable({{ binfra|safe }});
+
+        var options = {
+          title: 'Company Performance',
+          hAxis: {title: 'Speaker', titleTextStyle: {color: 'red'}}
+        };
+
+        var chart = new google.visualization.ColumnChart(document.getElementById('chart_div2'));
+        chart.draw(data, options);
+      }
+    </script>
+
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable({{ bscientific|safe }});
+
+        var options = {
+          title: 'Company Performance',
+          hAxis: {title: 'Speaker', titleTextStyle: {color: 'red'}}
+        };
+
+        var chart = new google.visualization.ColumnChart(document.getElementById('chart_div3'));
+        chart.draw(data, options);
+      }
+    </script>
+
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable({{ bsoftware|safe }});
+
+        var options = {
+          title: 'Company Performance',
+          hAxis: {title: 'Speaker', titleTextStyle: {color: 'red'}}
+        };
+
+        var chart = new google.visualization.ColumnChart(document.getElementById('chart_div4'));
+        chart.draw(data, options);
+      }
+    </script>
+
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable({{ bweb|safe }});
+
+        var options = {
+          title: 'Company Performance',
+          hAxis: {title: 'Speaker', titleTextStyle: {color: 'red'}}
+        };
+
+        var chart = new google.visualization.ColumnChart(document.getElementById('chart_div5'));
+        chart.draw(data, options);
+      }
+    </script>
+
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable({{ bwork|safe }});
+
+        var options = {
+          title: 'Company Performance',
+          hAxis: {title: 'Speaker', titleTextStyle: {color: 'red'}}
+        };
+
+        var chart = new google.visualization.ColumnChart(document.getElementById('chart_div6'));
         chart.draw(data, options);
       }
     </script>
@@ -172,7 +269,7 @@
       </div>
     </div><!-- /.col-lg-6 -->
     <div class="col-lg-6">
-      <p id="chart_div" style="width: 100%; height: 15em;"></p>
+      <p id="chart_div" style="width: 100%; height: 20em;"></p>
     </div><!-- /.col-lg-6 -->
   </div>
   {% endif %}
@@ -194,6 +291,9 @@
         {% endfor %}
       </div>
     </div><!-- /.col-lg-6 -->
+    <div class="col-lg-6">
+      <p id="chart_div1" style="width: 100%; height: 20em;"></p>
+    </div><!-- /.col-lg-6 -->
   </div>
   {% endif %}
   <!-- End of Beginners (Embedded Python) -->
@@ -213,6 +313,9 @@
         </a>
         {% endfor %}
       </div>
+    </div><!-- /.col-lg-6 -->
+    <div class="col-lg-6">
+      <p id="chart_div2" style="width: 100%; height: 20em;"></p>
     </div><!-- /.col-lg-6 -->
   </div>
   {% endif %}
@@ -234,6 +337,9 @@
         {% endfor %}
       </div>
     </div><!-- /.col-lg-6 -->
+    <div class="col-lg-6">
+      <p id="chart_div3" style="width: 100%; height: 20em;"></p>
+    </div><!-- /.col-lg-6 -->
   </div>
   {% endif %}
   <!-- End of Beginners (Scientific Computing) -->
@@ -253,6 +359,9 @@
         </a>
         {% endfor %}
       </div>
+    </div><!-- /.col-lg-6 -->
+    <div class="col-lg-6">
+      <p id="chart_div4" style="width: 100%; height: 20em;"></p>
     </div><!-- /.col-lg-6 -->
   </div>
   {% endif %}
@@ -274,6 +383,9 @@
         {% endfor %}
       </div>
     </div><!-- /.col-lg-6 -->
+    <div class="col-lg-6">
+      <p id="chart_div5" style="width: 100%; height: 20em;"></p>
+    </div><!-- /.col-lg-6 -->
   </div>
   {% endif %}
   <!-- End of Beginners (Web Development) -->
@@ -293,6 +405,9 @@
         </a>
         {% endfor %}
       </div>
+    </div><!-- /.col-lg-6 -->
+    <div class="col-lg-6">
+      <p id="chart_div6" style="width: 100%; height: 20em;"></p>
     </div><!-- /.col-lg-6 -->
   </div>
   {% endif %}
