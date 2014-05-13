@@ -23,6 +23,20 @@ def stats(request):
     bsoftware = program.b_software(page)
     bweb = program.b_web(page)
     bwork = program.b_workshops(page)
+    icore = program.i_core(page)
+    iembedded = program.i_embedded(page)
+    iinfra = program.i_infrastructure(page)
+    iscientific = program.i_scientific(page)
+    isoftware = program.i_software(page)
+    iweb = program.i_web(page)
+    iwork = program.i_workshops(page)
+    acore = program.a_core(page)
+    aembedded = program.a_embedded(page)
+    ainfra = program.a_infrastructure(page)
+    ascientific = program.a_scientific(page)
+    asoftware = program.a_software(page)
+    aweb = program.a_web(page)
+    awork = program.a_workshops(page)
     context = Context({'total':total, 'begineer':proposallist[0],
             'intermediate': proposallist[1],'advanced':proposallist[2], 
             'beginnerchart': section[0], 'intermediatechart': section[1], 
@@ -39,6 +53,10 @@ def stats(request):
             'webadvances' : advancedlist[5], 'workadvaces' : advancedlist[6],
             'bcore' : bcore, 'bembedded' : bembedded, 'binfra' : binfra,
             'bscientific' : bscientific, 'bsoftware' : bsoftware, 'bweb' : bweb,
-            'bwork' : bwork})
+            'bwork' : bwork, 'icore' : icore, 'iembedded' : iembedded,
+            'iinfra' : iinfra, 'iscientific' : iscientific, 'isoftware' : isoftware,
+            'iweb' : iweb, 'iwork' : iwork, 'acore' : acore, 'aembedded' : aembedded,
+            'ainfra' : ainfra, 'ascientific' : ascientific, 'asoftware' : asoftware,
+            'aweb' : aweb, 'awork' : awork})
     return render_to_response("home.html", context)
 

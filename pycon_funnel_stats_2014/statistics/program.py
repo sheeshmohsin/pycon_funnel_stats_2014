@@ -1,4 +1,8 @@
 from bs4 import BeautifulSoup
+import os
+
+
+link = 'http://in.pycon.org'
 
 
 def total(page):
@@ -155,6 +159,7 @@ def beginner(page):
                 temp.append(detail[1].find_all('td')[6].string)
                 temp.append(detail[1].find_all('td')[7].string)
                 temp.append(detail[1].find_all('td')[8].string)
+                temp.append(link + detail[0].find('a').get('href'))
                 core_python.append(temp)
             elif section == "Embedded Python":
                 temp = []
@@ -163,6 +168,7 @@ def beginner(page):
                 temp.append(detail[1].find_all('td')[6].string)
                 temp.append(detail[1].find_all('td')[7].string)
                 temp.append(detail[1].find_all('td')[8].string)
+                temp.append(link + detail[0].find('a').get('href'))
                 embedded_python.append(temp)
             elif section == "Infrastructure":
                 temp = []
@@ -171,6 +177,7 @@ def beginner(page):
                 temp.append(detail[1].find_all('td')[6].string)
                 temp.append(detail[1].find_all('td')[7].string)
                 temp.append(detail[1].find_all('td')[8].string)
+                temp.append(link + detail[0].find('a').get('href'))
                 infrastructure.append(temp)
             elif section == "Scientific Computing":
                 temp = []
@@ -179,6 +186,7 @@ def beginner(page):
                 temp.append(detail[1].find_all('td')[6].string)
                 temp.append(detail[1].find_all('td')[7].string)
                 temp.append(detail[1].find_all('td')[8].string)
+                temp.append(link + detail[0].find('a').get('href'))
                 scientific_computing.append(temp)
             elif section == "Software Development Tools":
                 temp = []
@@ -187,6 +195,7 @@ def beginner(page):
                 temp.append(detail[1].find_all('td')[6].string)
                 temp.append(detail[1].find_all('td')[7].string)
                 temp.append(detail[1].find_all('td')[8].string)
+                temp.append(link + detail[0].find('a').get('href'))
                 software_development.append(temp)
             elif section == "Web Development":
                 temp = []
@@ -195,6 +204,7 @@ def beginner(page):
                 temp.append(detail[1].find_all('td')[6].string)
                 temp.append(detail[1].find_all('td')[7].string)
                 temp.append(detail[1].find_all('td')[8].string)
+                temp.append(link + detail[0].find('a').get('href'))
                 web_development.append(temp)
             elif section == "Workshops":
                 temp = []
@@ -203,6 +213,7 @@ def beginner(page):
                 temp.append(detail[1].find_all('td')[6].string)
                 temp.append(detail[1].find_all('td')[7].string)
                 temp.append(detail[1].find_all('td')[8].string)
+                temp.append(link + detail[0].find('a').get('href'))
                 workshops.append(temp)
     
     beginner.append(core_python)
@@ -242,6 +253,7 @@ def intermediate(page):
                 temp.append(detail[1].find_all('td')[6].string)
                 temp.append(detail[1].find_all('td')[7].string)
                 temp.append(detail[1].find_all('td')[8].string)
+                temp.append(link + detail[0].find('a').get('href'))
                 core_python.append(temp)
             elif section == "Embedded Python":
                 temp = []
@@ -250,6 +262,7 @@ def intermediate(page):
                 temp.append(detail[1].find_all('td')[6].string)
                 temp.append(detail[1].find_all('td')[7].string)
                 temp.append(detail[1].find_all('td')[8].string)
+                temp.append(link + detail[0].find('a').get('href'))
                 embedded_python.append(temp)
             elif section == "Infrastructure":
                 temp = []
@@ -258,6 +271,7 @@ def intermediate(page):
                 temp.append(detail[1].find_all('td')[6].string)
                 temp.append(detail[1].find_all('td')[7].string)
                 temp.append(detail[1].find_all('td')[8].string)
+                temp.append(link + detail[0].find('a').get('href'))
                 infrastructure.append(temp)
             elif section == "Scientific Computing":
                 temp = []
@@ -266,6 +280,7 @@ def intermediate(page):
                 temp.append(detail[1].find_all('td')[6].string)
                 temp.append(detail[1].find_all('td')[7].string)
                 temp.append(detail[1].find_all('td')[8].string)
+                temp.append(link + detail[0].find('a').get('href'))
                 scientific_computing.append(temp)
             elif section == "Software Development Tools":
                 temp = []
@@ -274,6 +289,7 @@ def intermediate(page):
                 temp.append(detail[1].find_all('td')[6].string)
                 temp.append(detail[1].find_all('td')[7].string)
                 temp.append(detail[1].find_all('td')[8].string)
+                temp.append(link + detail[0].find('a').get('href'))
                 software_development.append(temp)
             elif section == "Web Development":
                 temp = []
@@ -282,6 +298,7 @@ def intermediate(page):
                 temp.append(detail[1].find_all('td')[6].string)
                 temp.append(detail[1].find_all('td')[7].string)
                 temp.append(detail[1].find_all('td')[8].string)
+                temp.append(link + detail[0].find('a').get('href'))
                 web_development.append(temp)
             elif section == "Workshops":
                 temp = []
@@ -290,6 +307,7 @@ def intermediate(page):
                 temp.append(detail[1].find_all('td')[6].string)
                 temp.append(detail[1].find_all('td')[7].string)
                 temp.append(detail[1].find_all('td')[8].string)
+                temp.append(link + detail[0].find('a').get('href'))
                 workshops.append(temp)
     
     intermediate.append(core_python)
@@ -329,6 +347,7 @@ def advanced(page):
                 temp.append(detail[1].find_all('td')[6].string)
                 temp.append(detail[1].find_all('td')[7].string)
                 temp.append(detail[1].find_all('td')[8].string)
+                temp.append(link + detail[0].find('a').get('href'))
                 core_python.append(temp)
             elif section == "Embedded Python":
                 temp = []
@@ -337,6 +356,7 @@ def advanced(page):
                 temp.append(detail[1].find_all('td')[6].string)
                 temp.append(detail[1].find_all('td')[7].string)
                 temp.append(detail[1].find_all('td')[8].string)
+                temp.append(link + detail[0].find('a').get('href'))
                 embedded_python.append(temp)
             elif section == "Infrastructure":
                 temp = []
@@ -345,6 +365,7 @@ def advanced(page):
                 temp.append(detail[1].find_all('td')[6].string)
                 temp.append(detail[1].find_all('td')[7].string)
                 temp.append(detail[1].find_all('td')[8].string)
+                temp.append(link + detail[0].find('a').get('href'))
                 infrastructure.append(temp)
             elif section == "Scientific Computing":
                 temp = []
@@ -353,6 +374,7 @@ def advanced(page):
                 temp.append(detail[1].find_all('td')[6].string)
                 temp.append(detail[1].find_all('td')[7].string)
                 temp.append(detail[1].find_all('td')[8].string)
+                temp.append(link + detail[0].find('a').get('href'))
                 scientific_computing.append(temp)
             elif section == "Software Development Tools":
                 temp = []
@@ -361,6 +383,7 @@ def advanced(page):
                 temp.append(detail[1].find_all('td')[6].string)
                 temp.append(detail[1].find_all('td')[7].string)
                 temp.append(detail[1].find_all('td')[8].string)
+                temp.append(link + detail[0].find('a').get('href'))
                 software_development.append(temp)
             elif section == "Web Development":
                 temp = []
@@ -369,6 +392,7 @@ def advanced(page):
                 temp.append(detail[1].find_all('td')[6].string)
                 temp.append(detail[1].find_all('td')[7].string)
                 temp.append(detail[1].find_all('td')[8].string)
+                temp.append(link + detail[0].find('a').get('href'))
                 web_development.append(temp)
             elif section == "Workshops":
                 temp = []
@@ -377,6 +401,7 @@ def advanced(page):
                 temp.append(detail[1].find_all('td')[6].string)
                 temp.append(detail[1].find_all('td')[7].string)
                 temp.append(detail[1].find_all('td')[8].string)
+                temp.append(link + detail[0].find('a').get('href'))
                 workshops.append(temp)
     
     advanced.append(core_python)

@@ -101,8 +101,8 @@
         var data = google.visualization.arrayToDataTable({{ bcore|safe }});
 
         var options = {
-          title: 'Company Performance',
-          hAxis: {title: 'Speaker', titleTextStyle: {color: 'red'}}
+          title: 'Core Python (Beginner)',
+          hAxis: {title: 'Speakers', titleTextStyle: {color: 'red'}}
         };
 
         var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
@@ -117,8 +117,8 @@
         var data = google.visualization.arrayToDataTable({{ bembedded|safe }});
 
         var options = {
-          title: 'Company Performance',
-          hAxis: {title: 'Speaker', titleTextStyle: {color: 'red'}}
+          title: 'Embedded Python (Beginner)',
+          hAxis: {title: 'Speakers', titleTextStyle: {color: 'red'}}
         };
 
         var chart = new google.visualization.ColumnChart(document.getElementById('chart_div1'));
@@ -133,8 +133,8 @@
         var data = google.visualization.arrayToDataTable({{ binfra|safe }});
 
         var options = {
-          title: 'Company Performance',
-          hAxis: {title: 'Speaker', titleTextStyle: {color: 'red'}}
+          title: 'Infrastructure (Beginner)',
+          hAxis: {title: 'Speakers', titleTextStyle: {color: 'red'}}
         };
 
         var chart = new google.visualization.ColumnChart(document.getElementById('chart_div2'));
@@ -149,7 +149,7 @@
         var data = google.visualization.arrayToDataTable({{ bscientific|safe }});
 
         var options = {
-          title: 'Company Performance',
+          title: 'Scientific Computing (Beginner)',
           hAxis: {title: 'Speaker', titleTextStyle: {color: 'red'}}
         };
 
@@ -165,8 +165,8 @@
         var data = google.visualization.arrayToDataTable({{ bsoftware|safe }});
 
         var options = {
-          title: 'Company Performance',
-          hAxis: {title: 'Speaker', titleTextStyle: {color: 'red'}}
+          title: 'Software Development Tools (Beginner)',
+          hAxis: {title: 'Speakers', titleTextStyle: {color: 'red'}}
         };
 
         var chart = new google.visualization.ColumnChart(document.getElementById('chart_div4'));
@@ -181,8 +181,8 @@
         var data = google.visualization.arrayToDataTable({{ bweb|safe }});
 
         var options = {
-          title: 'Company Performance',
-          hAxis: {title: 'Speaker', titleTextStyle: {color: 'red'}}
+          title: 'Web Development (Beginner)',
+          hAxis: {title: 'Speakers', titleTextStyle: {color: 'red'}}
         };
 
         var chart = new google.visualization.ColumnChart(document.getElementById('chart_div5'));
@@ -197,14 +197,259 @@
         var data = google.visualization.arrayToDataTable({{ bwork|safe }});
 
         var options = {
-          title: 'Company Performance',
-          hAxis: {title: 'Speaker', titleTextStyle: {color: 'red'}}
+          title: 'Workshops (Beginner)',
+          hAxis: {title: 'Speakers', titleTextStyle: {color: 'red'}}
         };
 
         var chart = new google.visualization.ColumnChart(document.getElementById('chart_div6'));
         chart.draw(data, options);
       }
     </script>
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable({{ icore|safe }});
+
+        var options = {
+          title: 'Core Python (Intermediate)',
+          hAxis: {title: 'Speakers', titleTextStyle: {color: 'red'}}
+        };
+
+        var chart = new google.visualization.ColumnChart(document.getElementById('chart_div7'));
+        chart.draw(data, options);
+      }
+    </script>
+
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable({{ iembedded|safe }});
+
+        var options = {
+          title: 'Embedded Python (Intermediate)',
+          hAxis: {title: 'Speakers', titleTextStyle: {color: 'red'}}
+        };
+
+        var chart = new google.visualization.ColumnChart(document.getElementById('chart_div8'));
+        chart.draw(data, options);
+      }
+    </script>
+
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable({{ iinfra|safe }});
+
+        var options = {
+          title: 'Infrastructure (Intermediate)',
+          hAxis: {title: 'Speakers', titleTextStyle: {color: 'red'}}
+        };
+
+        var chart = new google.visualization.ColumnChart(document.getElementById('chart_div9'));
+        chart.draw(data, options);
+      }
+    </script>
+
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable({{ iscientific|safe }});
+
+        var options = {
+          title: 'Scientific Computing (Intermediate)',
+          hAxis: {title: 'Speaker', titleTextStyle: {color: 'red'}}
+        };
+
+        var chart = new google.visualization.ColumnChart(document.getElementById('chart_div10'));
+        chart.draw(data, options);
+      }
+    </script>
+
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable({{ isoftware|safe }});
+
+        var options = {
+          title: 'Software Development Tools (Intermediate)',
+          hAxis: {title: 'Speakers', titleTextStyle: {color: 'red'}}
+        };
+
+        var chart = new google.visualization.ColumnChart(document.getElementById('chart_div11'));
+        chart.draw(data, options);
+      }
+    </script>
+
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable({{ iweb|safe }});
+
+        var options = {
+          title: 'Web Development (Intermediate)',
+          hAxis: {title: 'Speakers', titleTextStyle: {color: 'red'}}
+        };
+
+        var chart = new google.visualization.ColumnChart(document.getElementById('chart_div12'));
+        chart.draw(data, options);
+      }
+    </script>
+
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable({{ iwork|safe }});
+
+        var options = {
+          title: 'Workshops (Intermediate)',
+          hAxis: {title: 'Speakers', titleTextStyle: {color: 'red'}}
+        };
+
+        var chart = new google.visualization.ColumnChart(document.getElementById('chart_div13'));
+        chart.draw(data, options);
+      }
+    </script>
+
+
+
+
+
+
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable({{ acore|safe }});
+
+        var options = {
+          title: 'Core Python (Advanced)',
+          hAxis: {title: 'Speakers', titleTextStyle: {color: 'red'}}
+        };
+
+        var chart = new google.visualization.ColumnChart(document.getElementById('chart_div14'));
+        chart.draw(data, options);
+      }
+    </script>
+
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable({{ aembedded|safe }});
+
+        var options = {
+          title: 'Embedded Python (Advanced)',
+          hAxis: {title: 'Speakers', titleTextStyle: {color: 'red'}}
+        };
+
+        var chart = new google.visualization.ColumnChart(document.getElementById('chart_div15'));
+        chart.draw(data, options);
+      }
+    </script>
+
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable({{ ainfra|safe }});
+
+        var options = {
+          title: 'Infrastructure (Advanced)',
+          hAxis: {title: 'Speakers', titleTextStyle: {color: 'red'}}
+        };
+
+        var chart = new google.visualization.ColumnChart(document.getElementById('chart_div16'));
+        chart.draw(data, options);
+      }
+    </script>
+
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable({{ ascientific|safe }});
+
+        var options = {
+          title: 'Scientific Computing (Advanced)',
+          hAxis: {title: 'Speaker', titleTextStyle: {color: 'red'}}
+        };
+
+        var chart = new google.visualization.ColumnChart(document.getElementById('chart_div17'));
+        chart.draw(data, options);
+      }
+    </script>
+
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable({{ asoftware|safe }});
+
+        var options = {
+          title: 'Software Development Tools (Advanced)',
+          hAxis: {title: 'Speakers', titleTextStyle: {color: 'red'}}
+        };
+
+        var chart = new google.visualization.ColumnChart(document.getElementById('chart_div18'));
+        chart.draw(data, options);
+      }
+    </script>
+
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable({{ aweb|safe }});
+
+        var options = {
+          title: 'Web Development (Advanced)',
+          hAxis: {title: 'Speakers', titleTextStyle: {color: 'red'}}
+        };
+
+        var chart = new google.visualization.ColumnChart(document.getElementById('chart_div19'));
+        chart.draw(data, options);
+      }
+    </script>
+
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable({{ awork|safe }});
+
+        var options = {
+          title: 'Workshops (Advanced)',
+          hAxis: {title: 'Speakers', titleTextStyle: {color: 'red'}}
+        };
+
+        var chart = new google.visualization.ColumnChart(document.getElementById('chart_div20'));
+        chart.draw(data, options);
+      }
+    </script>
+
+
+
+
+
+
+
+
+
   <div class="container marketing">
     <div class="row">
     	<div class="col-lg-12">
@@ -260,7 +505,7 @@
       <h4>Core Python</h4>
       <div class="list-group">
         {% for corebeginner in corebeginners %}
-        <a href="#" class="list-group-item">
+        <a href={{ corebeginner.5 }} target="blank" class="list-group-item">
           <h4 class="list-group-item-heading">{{ corebeginner.1 }}</h4>
           <h5 class="list-group-item-heading">{{ corebeginner.0 }}</h5>
           <h6 class="list-group-item-text text-muted">Applied on - {{ corebeginner.4 }}</h6>
@@ -283,7 +528,7 @@
       <h4>Embedded Python</h4>
       <div class="list-group">
         {% for embeddedbeginner in embeddedbeginners %}
-        <a href="#" class="list-group-item">
+        <a href={{ embeddedbeginner.5 }} target="blank" class="list-group-item">
           <h4 class="list-group-item-heading">{{ embeddedbeginner.1 }}</h4>
           <h5 class="list-group-item-heading">{{ embeddedbeginner.0 }}</h5>
           <h6 class="list-group-item-text text-muted">Applied on - {{ embeddedbeginner.4 }}</h6>
@@ -306,7 +551,7 @@
       <h4>Infrastructure</h4>
       <div class="list-group">
         {% for infrabeginner in infrabeginners %}
-        <a href="#" class="list-group-item">
+        <a href={{ infrabeginner.5 }} target="blank" class="list-group-item">
           <h4 class="list-group-item-heading">{{ infrabeginner.1 }}</h4>
           <h5 class="list-group-item-heading">{{ infrabeginner.0 }}</h5>
           <h6 class="list-group-item-text text-muted">Applied on - {{ infrabeginner.4 }}</h6>
@@ -329,7 +574,7 @@
       <h4>Scientific Computing</h4>
       <div class="list-group">
         {% for scibeginner in scibeginners %}
-        <a href="#" class="list-group-item">
+        <a href={{ scibeginner.5 }} target="blank" class="list-group-item">
           <h4 class="list-group-item-heading">{{ scibeginner.1 }}</h4>
           <h5 class="list-group-item-heading">{{ scibeginner.0 }}</h5>
           <h6 class="list-group-item-text text-muted">Applied on - {{ scibeginner.4 }}</h6>
@@ -352,7 +597,7 @@
       <h4>Software Development Tools</h4>
       <div class="list-group">
         {% for softbeginner in softbeginners %}
-        <a href="#" class="list-group-item">
+        <a href={{ softbeginner.5 }} target="blank" class="list-group-item">
           <h4 class="list-group-item-heading">{{ softbeginner.1 }}</h4>
           <h5 class="list-group-item-heading">{{ softbeginner.0 }}</h5>
           <h6 class="list-group-item-text text-muted">Applied on - {{ softbeginner.4 }}</h6>
@@ -375,7 +620,7 @@
       <h4>Web Development</h4>
       <div class="list-group">
         {% for webbeginner in webbeginners %}
-        <a href="#" class="list-group-item">
+        <a href={{ webbeginner.5 }} target="blank" class="list-group-item">
           <h4 class="list-group-item-heading">{{ webbeginner.1 }}</h4>
           <h5 class="list-group-item-heading">{{ webbeginner.0 }}</h5>
           <h6 class="list-group-item-text text-muted">Applied on - {{ webbeginner.4 }}</h6>
@@ -398,7 +643,7 @@
       <h4>Workshops</h4>
       <div class="list-group">
         {% for workbeginner in workbeginners %}
-        <a href="#" class="list-group-item">
+        <a href={{ workbeginner.5 }} target="blank" class="list-group-item">
           <h4 class="list-group-item-heading">{{ workbeginner.1 }}</h4>
           <h5 class="list-group-item-heading">{{ workbeginner.0 }}</h5>
           <h6 class="list-group-item-text text-muted">Applied on - {{ workbeginner.4 }}</h6>
@@ -429,13 +674,16 @@
       <h4>Core Python</h4>
       <div class="list-group">
         {% for coreintermediate in coreintermediates %}
-        <a href="#" class="list-group-item">
+        <a href={{ coreintermediate.5 }} target="blank" class="list-group-item">
           <h4 class="list-group-item-heading">{{ coreintermediate.1 }}</h4>
           <h5 class="list-group-item-heading">{{ coreintermediate.0 }}</h5>
           <h6 class="list-group-item-text text-muted">Applied on - {{ coreintermediate.4 }}</h6>
         </a>
         {% endfor %}
       </div>
+    </div><!-- /.col-lg-6 -->
+    <div class="col-lg-6">
+      <p id="chart_div7" style="width: 100%; height: 20em;"></p>
     </div><!-- /.col-lg-6 -->
   </div>
   {% endif %}
@@ -449,13 +697,16 @@
       <h4>Embedded Python</h4>
       <div class="list-group">
         {% for embeddedintermediate in embeddedintermediates %}
-        <a href="#" class="list-group-item">
+        <a href={{ embeddedintermediate.5 }} target="blank" class="list-group-item">
           <h4 class="list-group-item-heading">{{ embeddedintermediate.1 }}</h4>
           <h5 class="list-group-item-heading">{{ embeddedintermediate.0 }}</h5>
           <h6 class="list-group-item-text text-muted">Applied on - {{ embeddedintermediate.4 }}</h6>
         </a>
         {% endfor %}
       </div>
+    </div><!-- /.col-lg-6 -->
+    <div class="col-lg-6">
+      <p id="chart_div8" style="width: 100%; height: 20em;"></p>
     </div><!-- /.col-lg-6 -->
   </div>
   {% endif %}
@@ -469,13 +720,16 @@
       <h4>Infrastructure</h4>
       <div class="list-group">
         {% for infraintermediate in infraintermediates %}
-        <a href="#" class="list-group-item">
+        <a href={{ infraintermediate.5 }} target="blank" class="list-group-item">
           <h4 class="list-group-item-heading">{{ infraintermediate.1 }}</h4>
           <h5 class="list-group-item-heading">{{ infraintermediate.0 }}</h5>
           <h6 class="list-group-item-text text-muted">Applied on - {{ infraintermediate.4 }}</h6>
         </a>
         {% endfor %}
       </div>
+    </div><!-- /.col-lg-6 -->
+    <div class="col-lg-6">
+      <p id="chart_div9" style="width: 100%; height: 20em;"></p>
     </div><!-- /.col-lg-6 -->
   </div>
   {% endif %}
@@ -489,13 +743,16 @@
       <h4>Scientific Computing</h4>
       <div class="list-group">
         {% for sciintermediate in sciintermediates %}
-        <a href="#" class="list-group-item">
+        <a href={{ sciintermediate.5 }} target="blank" class="list-group-item">
           <h4 class="list-group-item-heading">{{ sciintermediate.1 }}</h4>
           <h5 class="list-group-item-heading">{{ sciintermediate.0 }}</h5>
           <h6 class="list-group-item-text text-muted">Applied on - {{ sciintermediate.4 }}</h6>
         </a>
         {% endfor %}
       </div>
+    </div><!-- /.col-lg-6 -->
+    <div class="col-lg-6">
+      <p id="chart_div10" style="width: 100%; height: 20em;"></p>
     </div><!-- /.col-lg-6 -->
   </div>
   {% endif %}
@@ -509,13 +766,16 @@
       <h4>Software Development Tools</h4>
       <div class="list-group">
         {% for softintermediate in softintermediates %}
-        <a href="#" class="list-group-item">
+        <a href={{ softintermediate.5 }} target="blank" class="list-group-item">
           <h4 class="list-group-item-heading">{{ softintermediate.1 }}</h4>
           <h5 class="list-group-item-heading">{{ softintermediate.0 }}</h5>
           <h6 class="list-group-item-text text-muted">Applied on - {{ softintermediate.4 }}</h6>
         </a>
         {% endfor %}
       </div>
+    </div><!-- /.col-lg-6 -->
+    <div class="col-lg-6">
+      <p id="chart_div11" style="width: 100%; height: 20em;"></p>
     </div><!-- /.col-lg-6 -->
   </div>
   {% endif %}
@@ -529,13 +789,16 @@
       <h4>Web Development</h4>
       <div class="list-group">
         {% for webintermediate in webintermediates %}
-        <a href="#" class="list-group-item">
+        <a href={{ webintermediate.5 }} target="blank" class="list-group-item">
           <h4 class="list-group-item-heading">{{ webintermediate.1 }}</h4>
           <h5 class="list-group-item-heading">{{ webintermediate.0 }}</h5>
           <h6 class="list-group-item-text text-muted">Applied on - {{ webintermediate.4 }}</h6>
         </a>
         {% endfor %}
       </div>
+    </div><!-- /.col-lg-6 -->
+    <div class="col-lg-6">
+      <p id="chart_div12" style="width: 100%; height: 20em;"></p>
     </div><!-- /.col-lg-6 -->
   </div>
   {% endif %}
@@ -549,13 +812,16 @@
       <h4>Workshops</h4>
       <div class="list-group">
         {% for workintermediate in workintermediates %}
-        <a href="#" class="list-group-item">
+        <a href={{ workintermediate.5 }} target="blank" class="list-group-item">
           <h4 class="list-group-item-heading">{{ workintermediate.1 }}</h4>
           <h5 class="list-group-item-heading">{{ workintermediate.0 }}</h5>
           <h6 class="list-group-item-text text-muted">Applied on - {{ workintermediate.4 }}</h6>
         </a>
         {% endfor %}
       </div>
+    </div><!-- /.col-lg-6 -->
+    <div class="col-lg-6">
+      <p id="chart_div13" style="width: 100%; height: 20em;"></p>
     </div><!-- /.col-lg-6 -->
   </div>
   {% endif %}
@@ -578,13 +844,16 @@
       <h4>Core Python</h4>
       <div class="list-group">
         {% for coreadvance in coreadvances %}
-        <a href="#" class="list-group-item">
+        <a href={{ coreadvance.5 }} target="blank" class="list-group-item">
           <h4 class="list-group-item-heading">{{ coreadvance.1 }}</h4>
           <h5 class="list-group-item-heading">{{ coreadvance.0 }}</h5>
           <h6 class="list-group-item-text text-muted">Applied on - {{ coreadvance.4 }}</h6>
         </a>
         {% endfor %}
       </div>
+    </div><!-- /.col-lg-6 -->
+    <div class="col-lg-6">
+      <p id="chart_div14" style="width: 100%; height: 20em;"></p>
     </div><!-- /.col-lg-6 -->
   </div>
   {% endif %}
@@ -598,13 +867,16 @@
       <h4>Embedded Python</h4>
       <div class="list-group">
         {% for embeddedadvance in embeddedadvances %}
-        <a href="#" class="list-group-item">
+        <a href={{ embeddedadvance.5 }} target="blank" class="list-group-item">
           <h4 class="list-group-item-heading">{{ embeddedadvance.1 }}</h4>
           <h5 class="list-group-item-heading">{{ embeddedadvance.0 }}</h5>
           <h6 class="list-group-item-text text-muted">Applied on - {{ embeddedadvance.4 }}</h6>
         </a>
         {% endfor %}
       </div>
+    </div><!-- /.col-lg-6 -->
+    <div class="col-lg-6">
+      <p id="chart_div15" style="width: 100%; height: 20em;"></p>
     </div><!-- /.col-lg-6 -->
   </div>
   {% endif %}
@@ -618,13 +890,16 @@
       <h4>Infrastructure</h4>
       <div class="list-group">
         {% for infraadvance in infraadvances %}
-        <a href="#" class="list-group-item">
+        <a href={{ infraadvance.5 }} target="blank" class="list-group-item">
           <h4 class="list-group-item-heading">{{ infraadvance.1 }}</h4>
           <h5 class="list-group-item-heading">{{ infraadvance.0 }}</h5>
           <h6 class="list-group-item-text text-muted">Applied on - {{ infraadvance.4 }}</h6>
         </a>
         {% endfor %}
       </div>
+    </div><!-- /.col-lg-6 -->
+    <div class="col-lg-6">
+      <p id="chart_div16" style="width: 100%; height: 20em;"></p>
     </div><!-- /.col-lg-6 -->
   </div>
   {% endif %}
@@ -638,13 +913,16 @@
       <h4>Scientific Computing</h4>
       <div class="list-group">
         {% for sciadvance in sciadvances %}
-        <a href="#" class="list-group-item">
+        <a href={{ sciadvance.5 }} target="blank" class="list-group-item">
           <h4 class="list-group-item-heading">{{ sciadvance.1 }}</h4>
           <h5 class="list-group-item-heading">{{ sciadvance.0 }}</h5>
           <h6 class="list-group-item-text text-muted">Applied on - {{ sciadvance.4 }}</h6>
         </a>
         {% endfor %}
       </div>
+    </div><!-- /.col-lg-6 -->
+    <div class="col-lg-6">
+      <p id="chart_div17" style="width: 100%; height: 20em;"></p>
     </div><!-- /.col-lg-6 -->
   </div>
   {% endif %}
@@ -658,13 +936,16 @@
       <h4>Software Development Tools</h4>
       <div class="list-group">
         {% for softadvance in softadvances %}
-        <a href="#" class="list-group-item">
+        <a href={{ softadvance.5 }} target="blank" class="list-group-item">
           <h4 class="list-group-item-heading">{{ softadvance.1 }}</h4>
           <h5 class="list-group-item-heading">{{ softadvance.0 }}</h5>
           <h6 class="list-group-item-text text-muted">Applied on - {{ softadvance.4 }}</h6>
         </a>
         {% endfor %}
       </div>
+    </div><!-- /.col-lg-6 -->
+    <div class="col-lg-6">
+      <p id="chart_div18" style="width: 100%; height: 20em;"></p>
     </div><!-- /.col-lg-6 -->
   </div>
   {% endif %}
@@ -678,13 +959,16 @@
       <h4>Web Development</h4>
       <div class="list-group">
         {% for webadvance in webadvances %}
-        <a href="#" class="list-group-item">
+        <a href={{ webadvance.5 }} target="blank" class="list-group-item">
           <h4 class="list-group-item-heading">{{ webadvance.1 }}</h4>
           <h5 class="list-group-item-heading">{{ webadvance.0 }}</h5>
           <h6 class="list-group-item-text text-muted">Applied on - {{ webadvance.4 }}</h6>
         </a>
         {% endfor %}
       </div>
+    </div><!-- /.col-lg-6 -->
+    <div class="col-lg-6">
+      <p id="chart_div19" style="width: 100%; height: 20em;"></p>
     </div><!-- /.col-lg-6 -->
   </div>
   {% endif %}
@@ -698,13 +982,16 @@
       <h4>Workshops</h4>
       <div class="list-group">
         {% for workadvance in workadvances %}
-        <a href="#" class="list-group-item">
+        <a href={{ workadvance.5 }} target="blank" class="list-group-item">
           <h4 class="list-group-item-heading">{{ workadvance.1 }}</h4>
           <h5 class="list-group-item-heading">{{ workadvance.0 }}</h5>
           <h6 class="list-group-item-text text-muted">Applied on - {{ workadvance.4 }}</h6>
         </a>
         {% endfor %}
       </div>
+    </div><!-- /.col-lg-6 -->
+    <div class="col-lg-6">
+      <p id="chart_div20" style="width: 100%; height: 20em;"></p>
     </div><!-- /.col-lg-6 -->
   </div>
   {% endif %}
