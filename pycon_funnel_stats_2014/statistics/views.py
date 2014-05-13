@@ -4,12 +4,12 @@ from django.core.urlresolvers import reverse
 from django.views import generic
 from django.utils import timezone, simplejson
 from django.template import Context
-from urllib2 import urlopen
 import program
+import requests
 
 def stats(request):
-    html = urlopen('http://in.pycon.org/funnel/2014/')
-    page = html.read()
+    html = requests.get('http://in.pycon.org/funnel/2014/')
+    page = html.content
     total = program.total(page)
     proposallist = program.proposallist(page)
     section = program.section(page)
