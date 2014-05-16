@@ -1,8 +1,5 @@
 from django.shortcuts import get_object_or_404, render, render_to_response
 from django.http import HttpResponseRedirect
-from django.core.urlresolvers import reverse
-from django.views import generic
-from django.utils import timezone, simplejson
 from django.template import Context
 import program
 import requests
