@@ -14,7 +14,11 @@ Now, change into the directory `pycon_funnel_stats_2014/pycon_funnel_stats_2014`
     
     cd pycon_funnel_stats_2014/pycon_funnel_stats_2014/
 
-And run this command:-
+Then, install the requirements using:-
+    
+    pip install requirements.txt
+
+And run the server using this command:-
     
     python manage.py runserver
 
