@@ -6,19 +6,19 @@ It gives statistics of the proposals in pycon india 2014 by parsing the data fro
 Configuring This Package
 ------------------------
 
-Clone this repository using this command:-
+Clone the repository:-
     
     git clone https://github.com/sheeshmohsin/pycon_funnel_stats_2014
 
-Now, change into the directory `pycon_funnel_stats_2014/pycon_funnel_stats_2014` using this command:-
+Change into the directory `pycon_funnel_stats_2014/pycon_funnel_stats_2014` :-
     
     cd pycon_funnel_stats_2014/pycon_funnel_stats_2014/
 
-Then, install the requirements using:-
+Install the requirements using:-
     
     pip install requirements.txt
 
-And run the server using this command:-
+Run the server :-
     
     python manage.py runserver
 
